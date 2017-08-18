@@ -5,7 +5,7 @@ body{
 	padding: 0px;
 	border: 0px;
 	margin: 0px;
-	background-color: #f4f4f4
+	background-color: #FFFDE0
 }
 
 /*Global*/
@@ -16,15 +16,15 @@ body{
 }
 
 header{
-	background-color: #35424a;
-	color: #ffffff;
+	background-color: #4D2C73;
+	color: #FFFDE0;
 	padding-top: 30px; 
 	min-height: 70px;
-	border-bottom: #e8491d 3px solid;
+	border-bottom: #5F7607 3px solid;
 }
 
 header a{
-	color: #ffffff;
+	color: #FFFDE0;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -46,11 +46,71 @@ header nav{
 }
 
 .highlight, .current {
-	color: #e8491d;
+	color: #190133;
 	font-weight: bold;
 }
 
 header a:hover{
-	color: #cccccc;
+	color: #FFFDE0;
 	font-weight: normal;
+}
+
+/* Showcase*/
+#showcase {
+	min-height: 400px;
+	background: url("./img/showcase.jpg") no-repeat 0 -400px;
+	text-align: center;
+	color: #FFFDE0;
+}
+#showcase h1 {
+	font-size: 50px;
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+#showcase p {
+	font-size: 17px;
+}
+
+/*OptIn Form*/
+#optinform {
+	padding: 15px;
+	background-color: #190133
+}
+#optinform h1 {
+	color: #FFFDE0;
+	font-size: 17px;
+	float: left;
+}
+#optinform form {
+	float: right;
+	margin-top: 10px;
+}
+#optinform input[type="email"] {
+	padding: 5px;
+	height: 23px;
+	width: 250px;
+}
+#optinform button[type="submit"]{
+	height: 38px;
+	background-color: #3A4800;
+	border: 0px;
+	color: #FFFDE0;
+	padding-left: 15px;
+	padding-right: 15px; 
+}
+
+/*Services*/
+#Services .Box {
+	float: left;
+	margin-top: 15px;
+	width: 33.33%;
+	text-align: center;
+}
+
+/*footer*/
+footer {
+	padding: 5px;
+	color: #ffffff;
+	background-color: #4D2C73;
+	text-align: center;
 }
