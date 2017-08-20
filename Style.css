@@ -51,8 +51,8 @@ header nav{
 }
 
 header a:hover{
-	color: #FFFDE0;
-	font-weight: normal;
+	color: #190133;
+	font-weight: bold;
 }
 
 /* Showcase*/
@@ -107,10 +107,127 @@ header a:hover{
 	text-align: center;
 }
 
+/*About Page Content*/
+article#contentabout {
+	float: left;
+	width: 65%;
+	text-align: justify;
+}
+
+aside#aboutside {
+	float: right;
+	width: 30%;
+	padding: 10px;
+	margin-top: 65px;
+	background-color: #4D2C73; 
+	color: #FFFDE0;
+	border: #5F7607 3px solid;
+}
+
+/*Services Page Content*/
+#contentservices {
+	float: left;
+	width: 65%;
+	text-align: justify;
+}
+
+#sideform {
+	float: right;
+	width: 30%;
+	padding: 10px;
+	margin-top: 62px;
+	background-color: #4D2C73; 
+	color: #FFFDE0;
+	border: #5F7607 3px solid;
+}
+
+div.servicecontainer {
+	padding: 10px;
+	border: #5F7607 1px solid;
+	margin: 10px;
+}
+
+aside#sideform .quote input, aside#sideform .quote textarea {
+	width: 90%;
+	padding: 5px;
+}
+#sideform button[type="submit"]{
+	height: 38px;
+	background-color: #3A4800;
+	border: 0px;
+	color: #FFFDE0;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 /*footer*/
 footer {
 	padding: 5px;
 	color: #ffffff;
 	background-color: #4D2C73;
 	text-align: center;
+}
+
+/*Media Queries*/
+@media (max-width: 768px){
+	header #brand, header nav{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header a{
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding: 7px;
+	}
+	header{
+		width: 100%;
+		padding: 10px;
+	}
+	#showcase h1{
+		margin-top: 35px;
+		font-size: 250%;
+	}
+	#showcase {
+		min-height: 350px;
+	}
+	#optinform h1{
+		text-align: center;
+	}
+	#optinform form, #optinform input[type="email"], #optinform button[type="submit"]{
+		float: none;
+		width: 100%;
+		margin: 5px;
+	}
+	section #services .box{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	/*About Page Content*/
+	article#contentabout {
+		float: none;
+		width: 100%;
+	}
+	aside#aboutside {
+		float: none;
+		width: 100%;
+		padding: 5px;
+		margin-top: 30px;
+		margin-bottom: 15px;
+	}
+	/*Services Page Content*/
+	#contentservices {
+	float: none;
+	width: 100%;
+	}
+
+	#sideform {
+	float: none;
+	width: 100%;
+	padding: 5px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	}
 }
